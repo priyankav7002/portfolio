@@ -69,17 +69,54 @@ body.dark-theme .nav-links a:hover {
    FILTER BUTTONS
 ========================= */
 
-body.dark-theme .filter-btn {
-    background-color: transparent;
-    border-color: var(--border-color);
-    color: var(--text-color);
+.portfolio-filters {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
 }
 
-body.dark-theme .filter-btn.active,
-body.dark-theme .filter-btn:hover {
-    background-color: var(--primary-color);
-    color: #ffffff;
-    border-color: var(--primary-color);
+.filter-btn {
+  padding: 10px 22px;
+  border-radius: 50px;
+  border: 1px solid var(--border-color);
+  background: var(--card-bg);
+  color: var(--text-color);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* HOVER EFFECT */
+.filter-btn:hover {
+  transform: translateY(-2px);
+  background: var(--primary-color);
+  color: #fff;
+  border-color: var(--primary-color);
+}
+
+/* ACTIVE BUTTON */
+.filter-btn.active {
+  background: var(--primary-color);
+  color: #fff;
+  border-color: var(--primary-color);
+  box-shadow: 0 8px 20px rgba(108, 99, 255, 0.3);
+}
+
+/* DARK MODE IMPROVEMENT */
+body.dark-theme .filter-btn {
+  background: #1c1c26;
+  border-color: #2a2a35;
+}
+
+body.dark-theme .filter-btn:hover,
+body.dark-theme .filter-btn.active {
+  background: var(--primary-color);
+  color: #fff;
 }
 
 /* =========================
