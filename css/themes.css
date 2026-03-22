@@ -1,0 +1,117 @@
+/* =========================
+   DARK THEME VARIABLES
+========================= */
+/* Light theme variables live in :root (style.css)
+   These override values when dark mode is active */
+
+body.dark-theme {
+    --bg-color: #0f0f14;
+    --text-color: #f1f1f1;
+    --subtext-color: #b5b5b5;
+
+    --secondary-color: #1a1a22;
+    --border-color: #2a2a35;
+
+    --card-bg: #1c1c26;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* =========================
+   SMOOTH THEME TRANSITIONS
+========================= */
+
+body,
+.header,
+.skill-card,
+.edu-card,
+.portfolio-item,
+.footer,
+.filter-btn,
+.btn {
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+/* =========================
+   DARK MODE BASE
+========================= */
+
+body.dark-theme {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* =========================
+   HEADER & NAV
+========================= */
+
+body.dark-theme .header {
+    background-color: var(--bg-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+body.dark-theme .nav-links a {
+    color: var(--text-color);
+}
+
+body.dark-theme .nav-links a::after {
+    background-color: var(--primary-color);
+}
+
+body.dark-theme .nav-links a:hover {
+    color: var(--primary-color);
+}
+
+/* =========================
+   FILTER BUTTONS
+========================= */
+
+body.dark-theme .filter-btn {
+    background-color: transparent;
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+body.dark-theme .filter-btn.active,
+body.dark-theme .filter-btn:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border-color: var(--primary-color);
+}
+
+/* =========================
+   BUTTON FIXES
+========================= */
+
+body.dark-theme .secondary-btn {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+body.dark-theme .secondary-btn:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+body.dark-theme .footer {
+    background-color: var(--secondary-color);
+}
+
+/* =========================
+   THEME TOGGLE BUTTON
+========================= */
+
+.theme-btn {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.theme-btn:hover {
+    transform: rotate(20deg) scale(1.05);
+}

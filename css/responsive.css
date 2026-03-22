@@ -1,0 +1,168 @@
+/* =========================
+   BASE GOOGLE FORM (Desktop Default)
+========================= */
+
+.form-container iframe {
+  width: 100%;
+  height: 650px;
+  max-height: 100%;
+  border: none;
+}
+
+/* =========================
+   MOBILE DEVICES (max-width: 576px)
+========================= */
+
+@media (max-width: 576px) {
+
+  /* Sections */
+  .section {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  /* Header */
+  .nav-links {
+    display: none; /* future mobile menu can override */
+  }
+
+  .logo {
+    font-size: 1.4rem;
+  }
+
+  /* Hero */
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.3rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .hero-image img {
+    max-width: 280px;
+    margin-top: 30px;
+  }
+
+  /* About */
+  .about-info {
+    gap: 20px;
+  }
+
+  /* Portfolio */
+  .portfolio-filters {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  /* Contact */
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .contact-info {
+    margin-bottom: 30px;
+  }
+
+  /* Google Form - Mobile */
+  .form-container iframe {
+    height: 720px;
+  }
+
+  /* Footer */
+  .footer {
+    font-size: 0.9rem;
+  }
+}
+
+/* =========================
+   TABLETS (577px - 768px)
+========================= */
+
+@media (min-width: 577px) and (max-width: 768px) {
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  /* Hero */
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-image img {
+    max-width: 320px;
+    margin-top: 30px;
+  }
+
+  /* Skills & Education */
+  .skills-grid,
+  .education-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Contact (Tablet improvement) */
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  /* Google Form - Tablet */
+  .form-container iframe {
+    height: 680px;
+  }
+}
+
+/* =========================
+   SMALL LAPTOPS (769px - 1024px)
+========================= */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .hero-text h1 {
+    font-size: 2.7rem;
+  }
+
+  .hero-image img {
+    max-width: 350px;
+  }
+}
+
+/* =========================
+   LARGE SCREENS / TV (min-width: 1400px)
+========================= */
+
+@media (min-width: 1400px) {
+
+  body {
+    font-size: 18px;
+  }
+
+  .container {
+    max-width: 1400px;
+  }
+
+  .section-title {
+    font-size: 3rem;
+  }
+
+  .hero-text h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero-image img {
+    max-width: 450px;
+  }
+}
